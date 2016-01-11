@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DPHomeViewController">
+            <connections>
+                <outlet property="asButton" destination="3ct-u8-2k0" id="FOB-p7-rU6"/>
+                <outlet property="bottomView" destination="Gda-oM-wAD" id="2l4-qc-rhw"/>
+                <outlet property="collectionView" destination="61B-ia-EOl" id="LC7-tq-pgv"/>
+                <outlet property="favView" destination="BTI-6Z-pYp" id="IgE-aF-3a7"/>
+                <outlet property="flipView" destination="fla-Aj-T5S" id="zcq-xY-yLo"/>
+                <outlet property="fpButton" destination="hKe-X5-5Mz" id="f5W-AH-Qgd"/>
+                <outlet property="gccButton" destination="LyN-ij-iDl" id="X08-ht-TY8"/>
+                <outlet property="impNo" destination="pgF-1n-5UT" id="Jem-Gw-cEp"/>
+                <outlet property="laysButton" destination="wkm-d0-xb2" id="adb-9K-GZm"/>
+                <outlet property="mapView" destination="KK0-td-fGd" id="qq3-ce-FKh"/>
+                <outlet property="portsView" destination="9mG-tl-lcK" id="AfG-v7-8RQ"/>
+                <outlet property="rcButton" destination="bzN-gl-QdA" id="86c-vj-52x"/>
+                <outlet property="rtaButton" destination="cbh-Ae-iez" id="vzD-Y4-G2c"/>
+                <outlet property="topView" destination="yRe-mb-APD" id="8S2-s0-0Lg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="61B-ia-EOl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FTd-hC-Q4v">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZsS-gv-AzL"/>
+                        <outlet property="delegate" destination="-1" id="wlT-Ga-ZQb"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+        <view contentMode="scaleToFill" id="BTI-6Z-pYp">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkm-d0-xb2">
+                    <rect key="frame" x="109" y="31" width="114" height="135"/>
+                    <state key="normal" backgroundImage="layc.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzN-gl-QdA">
+                    <rect key="frame" x="210" y="36" width="114" height="135"/>
+                    <state key="normal" backgroundImage="RC.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbh-Ae-iez">
+                    <rect key="frame" x="111" y="165" width="114" height="135"/>
+                    <state key="normal" backgroundImage="RTA.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ct-u8-2k0">
+                    <rect key="frame" x="211" y="155" width="114" height="135"/>
+                    <state key="normal" backgroundImage="AC.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favourite.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-Qi-kIf">
+                    <rect key="frame" x="8" y="0.0" width="120" height="41"/>
+                </imageView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-X5-5Mz">
+                    <rect key="frame" x="0.0" y="39" width="114" height="135"/>
+                    <state key="normal" backgroundImage="FP.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyN-ij-iDl">
+                    <rect key="frame" x="1" y="154" width="114" height="135"/>
+                    <state key="normal" backgroundImage="Gcc.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view alpha="0.59999999999999964" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-8l-VPl">
+                    <rect key="frame" x="8" y="298" width="304" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="265" y="792"/>
+        </view>
+        <view contentMode="scaleToFill" id="9mG-tl-lcK">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PortsTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-xp-OpX">
+                    <rect key="frame" x="8" y="4" width="259" height="68"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PhoneSymbol.png" translatesAutoresizingMaskIntoConstraints="NO" id="X5s-u9-IrG">
+                    <rect key="frame" x="257" y="257" width="43" height="32"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DirectionTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vse-H3-Xn2">
+                    <rect key="frame" x="8" y="257" width="127" height="35"/>
+                </imageView>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KK0-td-fGd">
+                    <rect key="frame" x="8" y="80" width="304" height="170"/>
+                </mapView>
+                <view alpha="0.59999999999999964" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdM-E5-e0b">
+                    <rect key="frame" x="8" y="298" width="304" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="55" y="731"/>
+        </view>
+        <view contentMode="scaleToFill" id="pgF-1n-5UT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.64999997615814209" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6A-rR-6Us">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xT-Ov-UhR">
+                    <rect key="frame" x="137" y="264" width="61" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="More">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImportantNumbers.png" translatesAutoresizingMaskIntoConstraints="NO" id="LVa-vl-Ldh">
+                    <rect key="frame" x="8" y="5" width="245" height="44"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRe-mb-APD">
+                    <rect key="frame" x="8" y="59" width="304" height="101"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Call999.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-uM-lx3">
+                            <rect key="frame" x="0.0" y="0.0" width="273" height="82"/>
+                        </imageView>
+                        <button opaque="NO" tag="999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woj-UP-aTR">
+                            <rect key="frame" x="129" y="63" width="46" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <state key="normal" title="Call">
+                                <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="0.46999999999999997" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="callButtonPressed:" destination="-1" eventType="touchUpInside" id="ssE-ER-bTu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gda-oM-wAD">
+                    <rect key="frame" x="8" y="168" width="304" height="101"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Call901.png" translatesAutoresizingMaskIntoConstraints="NO" id="eXa-Fx-aK5">
+                            <rect key="frame" x="8" y="0.0" width="270" height="76"/>
+                        </imageView>
+                        <button opaque="NO" tag="901" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ag-Ax-HhJ">
+                            <rect key="frame" x="129" y="59" width="46" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <state key="normal" title="Call">
+                                <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="0.46999999999999997" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="callButtonPressed:" destination="-1" eventType="touchUpInside" id="mWs-gH-mFn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.64999997615814209" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xs4-XI-YRa">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="314" y="1135"/>
+        </view>
+        <view contentMode="scaleToFill" id="fla-Aj-T5S">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rZQ-Zn-DEv">
+                    <rect key="frame" x="0.0" y="60" width="304" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-Y5-S8I">
+                    <rect key="frame" x="152" y="60" width="1" height="41"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRQ-Wl-Kvp">
+                    <rect key="frame" x="200" y="69" width="66" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="No">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="yesOrNoButtonPressed:" destination="-1" eventType="touchUpInside" id="jER-ml-NQQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kz9-GX-ddG">
+                    <rect key="frame" x="45" y="69" width="66" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="Yes">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="yesOrNoButtonPressed:" destination="-1" eventType="touchUpInside" id="Uqq-fL-c4T"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure you want to call?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO3-1C-YlF">
+                    <rect key="frame" x="15" y="18" width="251" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="183" y="504.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AC.png" width="114" height="135"/>
+        <image name="Call901.png" width="270" height="76"/>
+        <image name="Call999.png" width="273" height="82"/>
+        <image name="DirectionTitle.png" width="127" height="35"/>
+        <image name="FP.png" width="114" height="135"/>
+        <image name="Gcc.png" width="114" height="135"/>
+        <image name="ImportantNumbers.png" width="245" height="44"/>
+        <image name="PhoneSymbol.png" width="43" height="32"/>
+        <image name="PortsTitle.png" width="259" height="68"/>
+        <image name="RC.png" width="114" height="135"/>
+        <image name="RTA.png" width="114" height="135"/>
+        <image name="favourite.png" width="120" height="41"/>
+        <image name="layc.png" width="114" height="135"/>
+    </resources>
+</document>
